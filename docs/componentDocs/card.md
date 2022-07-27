@@ -5,8 +5,8 @@
 ### 示例：
 
 <s-card
-    imgSrc="/supe-ui/vue.png"
-    summary="react learn" 
+    imgSrc="/vue.png"
+    summary="vue learn" 
   />
 
 ### 代码：
@@ -14,8 +14,8 @@
 ```html
 <template>
   <s-card
-    imgSrc="/supe-ui/vue.png"
-    summary="react learn"
+    imgSrc="/vue.png"
+    summary="vue learn"
   />
 </template>
 ```
