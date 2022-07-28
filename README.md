@@ -3,6 +3,9 @@
 ### 介绍
 **个人组件库, js通过webpack打包, sass通过gulp打包并压缩**
 
+### 组件文档
+https://supermaryer.github.io/supe-ui/
+
 ### 快速开始
 #### 1. 安装组件库
 

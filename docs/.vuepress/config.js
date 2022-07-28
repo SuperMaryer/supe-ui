@@ -3,9 +3,9 @@ module.exports = {
     description: "vue component and demo",
     base: "/supe-ui/",
     themeConfig: {
-        nav: [~
+        nav: [
             { text: "Home", link: "/" },
-            { text: "Github", link: "https://github.com/Supermaryer/supe-ui" },
+            { text: "Github", link: "https://github.com/supermaryer/supe-ui" },
             { text: "VuePress", link: "https://vuepress.vuejs.org/" },
         ],
         sidebar: [
