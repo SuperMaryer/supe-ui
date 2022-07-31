@@ -1,0 +1,48 @@
+// 文字大小尺寸
+// 描述性或者提示性的文字尺寸
+$font-size-small: 12px;
+// 正常的文字尺寸
+$font-size-normal: 14px;
+// 较重要或者次标题的文字尺寸
+$font-size-big: 16px;
+// 重要或者标题性的文字尺寸
+$font-size-bigger: 18px;
+// 重要或者标题性的文字尺寸
+$font-size-super: 20px;
+
+// 文字颜色
+// 非一般的内容文字，常用于 头部、菜单、标签、底部等
+$text-color-default: #fff;
+// 重要文字颜色，用于标题或重要内容
+$text-color-primary: #333;
+// 正常文字颜色，用于正常的内容
+$text-color-regular: #666;
+// 较不重要文字颜色，用于描述或提示等
+$text-color-secondary: #999;
+// 该变量已废弃，只是用于兼容部分旧的写法
+$text-color-placeholder: #c0c4cc;
+
+// 外部间距，侧边的间距，容器之间的间距
+$inner-gap: 10px;
+// 内部间距，容器内容、段落之间的间距
+$side-gap: 20px;
+
+// 颜色
+$color-primary: #21a7ed;
+$color-success: #67C23A;
+$color-warning: #ffc600;
+$color-danger: #F56C6C;
+$color-info: #909399;
+
+$color-primary1: fadeout($color-primary, 20%);
+$color-primary2: fadeout($color-primary, 40%);
+$color-primary3: fadeout($color-primary, 60%);
+
+// border shadow
+$box-shadow:0px 0px 23px 0px rgba(0, 3, 24, 0.05);
+$border-radius: 4px;
+$border-light-color: #f5f5f5;
+
+.box-shadow {
+    box-shadow: $box-shadow;
+}

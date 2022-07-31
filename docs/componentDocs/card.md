@@ -4,7 +4,7 @@
 
 ### 示例：
 
-<s-card
+<card
     imgSrc="/supe-ui/vue.png"
     summary="vue learn" 
   />
@@ -13,7 +13,7 @@
 
 ```html
 <template>
-  <s-card
+  <supe-card
     imgSrc="/supe-ui/vue.png"
     summary="vue learn"
   />

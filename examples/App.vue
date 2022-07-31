@@ -1,33 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <supe-demo />
-    <supe-card  
-      imgSrc="angular.png"
-      summary="动手做一个完整的AngularJS项目"
-    />
-    <br/>
-    <supe-card 
-      imgSrc="vue.png"
-      summary="渐进式JavaScript框架"
-    >
-      <div slot="footer" class="footer">
-        <div class="intro">易用、灵活、高效</div>
-        <div class="level">推荐级别：高</div>
-      </div>
-    </supe-card>
-    <br/>
-    <supe-card  
-      imgSrc="react.png"
-      :width="270"
-      :imgHeigth="90"
-    >
-      用于构建用户界面的 JavaScript 库
-      <div slot="footer" class="footer">
-        <div class="intro">声明式、组件化、一次学习，随处编写</div>
-        <div class="level">推荐级别：高</div>
-      </div>
-    </supe-card>
+    <router-view></router-view>
   </div>
 </template>
 

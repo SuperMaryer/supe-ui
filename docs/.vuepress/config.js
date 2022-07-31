@@ -10,7 +10,8 @@ module.exports = {
         ],
         sidebar: [
             "/", 
-            "/componentDocs/card"
+            "/componentDocs/card",
+            "/componentDocs/time-period-list"
         ],
     }
 }

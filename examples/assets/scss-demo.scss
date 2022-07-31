@@ -1,0 +1,158 @@
+// 演示sass 写法
+
+// 嵌套+父选择器
+.main {
+    font-weight: bold;
+    color: #fff;
+    &:hover { color: red; }
+    &-content {border: 1px solid #ccc; }
+    body.firefox & { font-weight: normal; }
+}
+/** 
+编译为
+.main {
+    font-weight: bold;
+    color: #fff;
+}
+.main:hover {
+    color: red;
+}
+.main-content {border: 1px solid #ccc; }
+body.firefox .main {
+    font-weight: normal;
+}*/
+
+// 变量 变量支持块级作用域 将局部变量转换为全局变量可以添加!global
+$width: 5em; 
+.box {
+    width: $width;
+    $height: 3em;
+    $redColor: red !global;
+    height: $height;
+    color: $redColor;
+}
+/**
+编译为
+.box {
+    width: 5em;
+    height: 3em;
+    color: red;
+}*/ 
+
+// 运算
+p {
+    $width: 1000px;
+    width: $width/2;            // Uses a variable, does division
+    width: round(1.5)/2;        // Uses a function, does division
+    height: (500px/2);          // Uses parentheses, does division
+    margin-left: 5px + 8px/2px; // Uses +, does division
+    
+    $font-size: 10px;
+    $line-height: 8px;
+    font: #{$font-size}/#{$line-height}; // 如果需要使用变量，同时又要确保 / 不做除法运算而是完整地编译到 CSS 文件中，只需要用 #{} 插值语句将变量包裹。
+    // font: 10px/8px;             // Plain CSS, no division
+    
+    cursor: e + -resize;   // + 可用于连接字符串    
+    margin: 3px + 4px auto; // 运算表达式与其他值连用时，用空格做连接符
+    
+    // 如果有引号字符串（位于 + 左侧）连接无引号字符串，运算结果是有引号的，相反，无引号字符串（位于 + 左侧）连接有引号字符串，运算结果则没有引号。
+    content: "Foo " + Bar;
+    font-family: sans- + "serif";
+}
+/**
+编译为
+p {
+    width: 500px;
+    height: 250px;
+    margin-left: 9px;
+    
+    font: 10px/8px;
+    
+    cursor: e-resize;
+    margin: 7px auto;
+
+    content: "Foo Bar";
+    font-family: sans-serif;
+}*/ 
+
+// 导入
+@import "foo.css";
+@import "foo" screen;
+@import "http://foo.com/bar";
+@import url(foo);
+// 多个一起导入
+@import "./var.scss", "./reset.scss";
+// 动态导入
+$family: unquote("Droid+Sans");
+@import url("http://fonts.googleapis.com/css?family=\#{$family}");
+
+// 导入到局部样式中
+#main {
+    @import "example";
+}
+/** 假设 example.scss 文件包含以下样式：
+.example {
+  color: red;
+}
+将会被编译为
+#main .example {
+  color: red;
+}
+*/ 
+
+// extend styles
+.error {
+    border: 1px #f00;
+    background-color: #fdd;
+}
+.error.intrusion {
+    background-image: url("/image/hacked.png");
+}
+.seriousError {
+    @extend .error;
+    border-width: 3px;
+}
+/**
+编译为
+.error, .seriousError {
+    border: 1px #f00;
+    background-color: #fdd; 
+}
+.error.intrusion, .seriousError.intrusion {
+    background-image: url("/image/hacked.png"); 
+}
+.seriousError {
+    border-width: 3px; 
+}*/ 
+
+
+// 混入mixin 和 include
+@mixin box-shadow($shadows...) {
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+    box-shadow: $shadows;
+}
+.shadows {
+    @include box-shadow(0px 4px 5px #666, 2px 6px 10px #999);
+}
+/**编译为
+.shadowed {
+    -moz-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+    -webkit-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+    box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+}*/
+@mixin colors($text, $background, $border) {
+    color: $text;
+    background-color: $background;
+    border-color: $border;
+}
+$values: #ff0000, #00ff00, #0000ff;
+.primary {
+    @include colors($values...);
+}
+/** 编译为
+// .primary {
+//   color: #ff0000;
+//   background-color: #00ff00;
+//   border-color: #0000ff;
+// }*/

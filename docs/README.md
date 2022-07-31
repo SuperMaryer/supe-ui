@@ -11,8 +11,8 @@ npm i supe-ui
 ```javascript
 // 全部引入
 import 'supe-ui/dist/css/index.css';
-import MUI from 'supe-ui';
-Vue.use(MUI);
+import SUI from 'supe-ui';
+Vue.use(SUI);
 
 
 // 按需引入
