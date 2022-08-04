@@ -13,14 +13,14 @@ import router from './router';
 // Vue.use(Card)
 
 // lib组件测试
-// import '../components/css/index.scss';
-// import SUI from '../components/lib/index.js';
-// Vue.use(SUI);
+import '../components/css/index.scss';
+import SUI from '../components/lib/index.js';
+Vue.use(SUI);
 
 // // npm 包测试全部引入
-import 'supe-ui/dist/css/index.css';
-import SUI from 'supe-ui';
-Vue.use(SUI);
+// import 'supe-ui/dist/css/index.css';
+// import SUI from 'supe-ui';
+// Vue.use(SUI);
 
 Vue.config.productionTip = false
 

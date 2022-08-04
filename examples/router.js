@@ -25,6 +25,10 @@ let routeConfig = [
         path: '/time-period-list',
         component: () => import(/* webpackChunkName: "card" */'./views/time-period-list')
     },
+    {
+        path: '/content-section',
+        component: () => import(/* webpackChunkName: "card" */'./views/content-section')
+    },
 ];
 
 export default new VueRouter({

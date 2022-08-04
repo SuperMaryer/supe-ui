@@ -1,11 +1,13 @@
 import Demo from './demo'
 import Card from './card'
 import TimePeriodList from './time-period-list'
+import ContentSection from './content-section'
 
 const components = {
     Demo,
     Card,
     TimePeriodList,
+    ContentSection,
 }
 
 const install = function (Vue) {

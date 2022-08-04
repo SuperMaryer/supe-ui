@@ -1,0 +1,103 @@
+@import './default/index.scss';
+.s-content-section {
+    width: 100%;
+    padding: $side-gap;
+    box-sizing: border-box;
+    &:not(:last-child) {
+        padding-bottom: $inner-gap;
+    }
+    &:not(:last-child) {
+        // border-bottom: 1px dashed $border-light-color;
+    }
+    &-title {
+        font-weight: bold;
+        margin: $inner-gap 0;
+    }
+    &--container {
+        padding: 0 $inner-gap;
+    }
+    &-condition {
+        padding: 10px;
+        position: relative;
+        border: 1px solid $border-light-color;
+        &:not(:last-child) {
+            margin-bottom: $side-gap;
+        }
+        &-index {
+            position: absolute;
+            padding: 2px 6px;
+            font-size: $font-size-small;
+            background-color: $bg-color;
+            border: 1px solid $border-light-color;
+            &.top-start {
+                left: $side-gap;
+                top: 0px;
+                transform: translateY(-50%);
+            }
+            &.top-end {
+                right: $side-gap;
+                top: 0px;
+                transform: translateY(-50%);
+            }
+            &.top {
+                left: 50%;
+                top: 0px;
+                transform: translate(-50%, -50%);
+            }
+            &.bottom-start {
+                left: $side-gap;
+                bottom: 0px;
+                transform: translateY(50%);
+            }
+            &.bottom-end {
+                right: $side-gap;
+                bottom: 0px;
+                transform: translateY(50%);
+            }
+            &.bottom {
+                left: 50%;
+                bottom: 0px;
+                transform: translate(-50%, 50%);
+            }
+        }
+        &-icon-box {
+            position: absolute;
+            &.top-start {
+                left: $side-gap;
+                top: 0px;
+                transform: translateY(-50%);
+            }
+            &.top-end {
+                right: $side-gap;
+                top: 0px;
+                transform: translateY(-50%);
+            }
+            &.top {
+                left: 50%;
+                top: 0px;
+                transform: translate(-50%, -50%);
+            }
+            &.bottom-start {
+                left: $side-gap;
+                bottom: 0px;
+                transform: translateY(50%);
+            }
+            &.bottom-end {
+                right: $side-gap;
+                bottom: 0px;
+                transform: translateY(50%);
+            }
+            &.bottom {
+                left: 50%;
+                bottom: 0px;
+                transform: translate(-50%, 50%);
+            }
+        }
+        &-icon {
+            font-size: $font-size-bigger;
+            color: $color-danger;
+            cursor: pointer;
+            margin-left: 4px;
+        }
+    }
+}

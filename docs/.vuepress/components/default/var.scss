@@ -26,6 +26,7 @@ $text-color-placeholder: #c0c4cc;
 $inner-gap: 10px;
 // 内部间距，容器内容、段落之间的间距
 $side-gap: 20px;
+$side-gap-small: 10px;
 
 // 颜色
 $color-primary: #21a7ed;
@@ -42,6 +43,7 @@ $color-primary3: fadeout($color-primary, 60%);
 $box-shadow:0px 0px 23px 0px rgba(0, 3, 24, 0.05);
 $border-radius: 4px;
 $border-light-color: #f5f5f5;
+$bg-color: #f5f5f5;
 
 .box-shadow {
     box-shadow: $box-shadow;
