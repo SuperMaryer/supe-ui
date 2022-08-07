@@ -65,7 +65,7 @@
   }
 </script>
 ### 代码：
-
+::: details 点击查看代码
 ```html
 <template>
   <supe-time-period-list
@@ -130,6 +130,7 @@ export default {
 }
 </script>
 ```
+::: 
 
 ### Attributes
 

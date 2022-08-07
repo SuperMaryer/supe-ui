@@ -10,7 +10,7 @@
   />
 
 ### 代码：
-
+::: details 点击查看代码
 ```html
 <template>
   <supe-card
@@ -19,13 +19,13 @@
   />
 </template>
 ```
-
+:::
 ### Attributes
 
 | 参数      | 说明         | 类型        | 是否必要 | 默认值 |
 | --------- | ------------ | ----------- | -------- | ------ |
 | width     | 卡片宽度     | Number      | false    | -      |
-| imgSrc    | 图片资源地址 | String      | true     | -      |
+| imgSrc    | 图片资源地址 | Strin                              g      | true     | -      |
 | imgHeight | 图片高度     | String      | false    | -      |
 | summary   | 卡片概述     | String/Slot | false    | -      |
 | footer    | 卡片底部     | Slot        | false    | -      |
