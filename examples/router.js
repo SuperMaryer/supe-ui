@@ -23,11 +23,15 @@ let routeConfig = [
     },
     {
         path: '/time-period-list',
-        component: () => import(/* webpackChunkName: "card" */'./views/time-period-list')
+        component: () => import(/* webpackChunkName: "time-period-list" */'./views/time-period-list')
     },
     {
         path: '/content-section',
-        component: () => import(/* webpackChunkName: "card" */'./views/content-section')
+        component: () => import(/* webpackChunkName: "content-section" */'./views/content-section')
+    },
+    {
+        path: '/plate-num-select',
+        component: () => import(/* webpackChunkName: "/plate-num-select" */'./views/plate-num-select')
     },
 ];
 

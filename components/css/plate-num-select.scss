@@ -1,0 +1,51 @@
+@import './default/index.scss';
+.s-plate-num-select {
+    position: relative;
+    display: inline-block;
+    input {
+        margin-right: 1px;
+        vertical-align: middle;
+    }
+    &-short-input {
+        text-align: center;
+    }
+    &-popup {
+        position: absolute;
+        z-index: 2;
+        background: #d1d4db;
+        width:  280px;
+        padding: 4px;
+        margin-top: 4px;
+        &-item {
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            background: #fff;
+            text-align: center;
+            border-radius: 2px;
+            margin-right: 2px;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover {
+                background: $color-primary;
+                color: #fff;
+            }
+            .box-shadow
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                background: $color-primary;
+                color: #fff;
+            }
+        }
+        &-flex-row {
+            display: flex;
+            margin-bottom: 6px;
+            justify-content: center;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+  }

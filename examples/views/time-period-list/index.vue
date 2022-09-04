@@ -4,7 +4,6 @@
       :list="list"
       title="Time period Demo"
     ></supe-time-period-list>
-    <!-- <supe-demo></supe-demo> -->
   </div>
 </template>
 
@@ -18,5 +17,3 @@ export default {
   },
 }
 </script>
-
-<style>

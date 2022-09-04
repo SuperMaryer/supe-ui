@@ -1,6 +1,6 @@
 {
   "name": "supe-ui",
-  "version": "0.1.8",
+  "version": "0.1.10",
   "description": "vue component library demo",
   "main": "dist/index.umd.js",
   "keywords": [

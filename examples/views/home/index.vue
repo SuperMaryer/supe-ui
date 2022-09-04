@@ -5,6 +5,7 @@
       <li><router-link to="/card">card</router-link></li>
       <li><router-link to="/time-period-list">time-period-list</router-link></li>
       <li><router-link to="/content-section">content-section</router-link></li>
+      <li><router-link to="/plate-num-select">plate-num-select</router-link></li>
     </ul>
   </div>
 </template>
