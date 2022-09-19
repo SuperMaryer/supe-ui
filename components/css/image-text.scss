@@ -1,0 +1,16 @@
+@import './default/index.scss';
+.s-image-text {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-background{
+        background-image: url('./images/image-text-bg.png');
+        background-clip: text;
+        color: transparent;
+        background-size: 100% 100%;
+        font-size: 40px;
+    }
+}

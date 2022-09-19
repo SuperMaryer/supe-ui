@@ -1,0 +1,15 @@
+@import './default/index.scss';
+.s-linear-text {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-background{
+        background-image: linear-gradient(white, $color-primary);
+        background-clip: text;
+        color: transparent;
+        font-size: 40px;
+    }
+}

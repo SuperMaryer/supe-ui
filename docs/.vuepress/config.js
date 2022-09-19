@@ -41,6 +41,10 @@ module.exports = {
             "/componentDocs/card",
             "/componentDocs/time-period-list",
             "/componentDocs/content-section",
+            "/componentDocs/plate-num-select",
+            "/componentDocs/linear-text",
+            "/componentDocs/image-text",
+            // "/componentDocs/scroll-text",
         ],
     },
     plugins: [

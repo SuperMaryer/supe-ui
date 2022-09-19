@@ -3,6 +3,9 @@ import Card from './card'
 import TimePeriodList from './time-period-list'
 import ContentSection from './content-section'
 import PlateNumSelect from './plate-num-select'
+import SupeLinearText from './linear-text'
+import SupeImageText from './image-text'
+// import SupeScrollText from './scroll-text'
 
 const components = {
     Demo,
@@ -10,6 +13,9 @@ const components = {
     TimePeriodList,
     ContentSection,
     PlateNumSelect,
+    SupeLinearText,
+    SupeImageText,
+    // SupeScrollText,
 }
 
 const install = function (Vue) {
