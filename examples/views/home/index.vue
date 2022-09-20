@@ -8,7 +8,7 @@
       <li><router-link to="/plate-num-select">plate-num-select</router-link></li>
       <li><router-link to="/linear-text">linear-text</router-link></li>
       <li><router-link to="/image-text">image-text</router-link></li>
-      <!-- <li><router-link to="/scroll-text">scroll-text</router-link></li> -->
+      <li><router-link to="/scroll-text">scroll-text</router-link></li>
     </ul>
   </div>
 </template>

@@ -5,7 +5,7 @@ import ContentSection from './content-section'
 import PlateNumSelect from './plate-num-select'
 import SupeLinearText from './linear-text'
 import SupeImageText from './image-text'
-// import SupeScrollText from './scroll-text'
+import SupeScrollText from './scroll-text'
 
 const components = {
     Demo,
@@ -15,7 +15,7 @@ const components = {
     PlateNumSelect,
     SupeLinearText,
     SupeImageText,
-    // SupeScrollText,
+    SupeScrollText,
 }
 
 const install = function (Vue) {
